@@ -78,3 +78,8 @@ if it is not register as a screen then we can use this to get the route params:
 ` import{ useRoute} from '@react-navigation/native';`
 ` const route = useRoute();
  route.params.categoryId = catId;`
+
+
+State: 
+If something change the content appearing or disappearing, then we will use useState hook.
+If some like to take one page to another page or screen- we will use Navigation. 

@@ -6,7 +6,7 @@ import StackNavigation from './src/route/StackNavigation';
 export default function App() {
   return (
     <>
-      <StatusBar style="dark" />
+      <StatusBar style="light" />
       <NavigationContainer>
         <StackNavigation />
       </NavigationContainer>
