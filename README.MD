@@ -1,6 +1,14 @@
 # NATIVE MEALS APP
 ## [React Navigation: - ](https://reactnavigation.org/docs/getting-started)
 
+###App.js set up
+```
+"icon": "./assets/icon.png",
+"backgroundColor": "#24180f",
+```
+
+
+
 ~ npm install @react-navigation/native
 ~ npx expo install react-native-screens react-native-safe-area-context 
 In App: 
