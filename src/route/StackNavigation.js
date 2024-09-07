@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import CategoriesScreen from '../screens/CategoriesScreen';
 import MealsOverViewScreen from '../screens/MealsOverViewScreen';
 import MealDetailsScreen from '../screens/MealDetailsScreen';
+import DrawerNavigator from './DrawerNavigation';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,30 +17,19 @@ function StackNavigation() {
       }}
     >
       <Stack.Screen
-        name="MealsCategories"
-        component={CategoriesScreen}
+        name="Drawer"
+        component={DrawerNavigator}
         options={{
-          title: 'All Categories',
+          headerShown: false,
         }}
       />
-      <Stack.Screen
-        name="MealsOverview"
-        component={MealsOverViewScreen}
-        // options={({ route, navigation }) => {
-        //   const catId = route.params.categoryId.title;
-        //   return {
-        //     title: catId,
-        //   };
-        // }}
-      />
+      <Stack.Screen name="MealsOverview" component={MealsOverViewScreen} />
       <Stack.Screen
         name="MealDetails"
         component={MealDetailsScreen}
-        //   options={{
-        //     headerRight: () => {
-        //       return <Button title="Tap me!" onPress={() => {}}/>;
-        //     },
-        //   }}
+        options={{
+          title: 'About the Meal',
+        }}
       />
     </Stack.Navigator>
   );
